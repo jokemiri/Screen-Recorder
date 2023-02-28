@@ -27,7 +27,7 @@ root.resizable(False, False)
 #command functions
 def start_rec():
     file=Filename.get()
-    record.start_recording(str(file+".mp4"),5)
+    record.start_recording(str(file+".mp4"),15)
 
 def pause_rec():
     record.pause_recording()
@@ -52,7 +52,7 @@ root.iconphoto(False,window_icon)
 
 #window header
 header = Label(root, text='Screen Recorder', bg='#d0dbe4', font='Cambria 15 bold').pack(pady=20)
-Label(root, text='-by Josh', font='Cambria 12', bd=0, bg='#d0dbe4').place(x=240, y=40)
+Label(root, text='-by Josh', font='Cambria 12', bd=0, bg='#d0dbe4').place(x=240, y=45)
 # #window logo
 logo = PhotoImage(file='logo.png')
 Label(root, image=logo, bd=0, bg='#d0dbe4').pack(pady=30)
